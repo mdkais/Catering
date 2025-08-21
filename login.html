@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        label {
+            color: white;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .cont {
+            padding: 5%;
+        }
+
+        input[type=button] {
+            color: #fbfcfd;
+            padding: 10px 25px;
+            background: transparent;
+            border: 1px solid #fff;
+            border-radius: 20px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        input[type=button]:hover {
+            background-color: #f7c705;
+            color: black;
+        }
+
+        button {
+            width: 100%;
+            color: #fff;
+        }
+
+        .login-button {
+            font-weight: bolder;
+            background-color: black;
+            border: 20px white;
+            color: white;
+            transition-duration: 0.4s;
+            box-shadow: 3px 3px 3px 4px #5f5e5d;
+        }
+
+        .login-button:hover {
+            background-color: #f7c705;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <img src="Logo2.png" class="logo">
+        </div>
+        <div class="cont">
+            <h2>Login</h2>
+            <form method="post" action="login.php">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" required placeholder="Username">
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required placeholder="Password">
+                <br>
+                <input type="submit" value="Login" class="login-button"> <br><br>
+                <button type="button" onclick="document.location='sign_up.html'">Sign Up</button>
+            </form><br>
+            <button type="button" onclick="document.location='index.html'">Main Page</button>
+        </div>
+    </div>
+</body>
+</body>
+
+</html>
